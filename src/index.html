@@ -1,10 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <h1>Hello World</h1>
-    </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Left Sidebar Navigation Layout</title>
+</head>
+<body>
+  <header class="top-bar" role="banner">
+    <div class="top-bar-left">GMM</div>
+    <div class="top-bar-right">Author Name</div>
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <nav class="nav-buttons" aria-label="Primary">
+        <button class="nav-button" type="button">
+            <img src = "/icons/arrow.png" alt="Back icon" class="nav-icon"/>
+            Back
+        </button>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown('dbDropdown')">
+            <span class="left-content">
+              <img src="/icons/database.png" alt="Database icon" class="nav-icon"/>
+              Database
+            </span>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="dbDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown('saleDropdown')">
+            <span class="left-content">
+              <img src="/icons/bell.png" alt="Sales icon" class="nav-icon"/>
+              Sales
+            </span>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="saleDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown('productionDropdown')">
+            <span class="left-content">
+              <img src="/icons/bell.png" alt="Productions icon" class="nav-icon"/>
+              Productions
+            </span>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="productionDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown('hrDropdown')">
+            <span class="left-content">
+              <img src="/icons/stethoscope.png" alt="Human resources icon" class="nav-icon"/>
+              Human resources
+            </span>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="hrDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <button class="nav-button" type="button">
+            <img src = "/icons/home.png" alt="Home icon" class="nav-icon"/>
+            Home
+        </button>
+        <button class="nav-button" type="button">
+            <img src = "/icons/store.png" alt="Shop icon" class="nav-icon"/>
+            Shop
+        </button>
+        <button class="nav-button" type="button">
+            <img src = "/icons/wiki.png" alt="Wiki icon" class="nav-icon"/>
+            Wiki
+        </button>
+        <button class="nav-button" type="button">
+            <img src = "/icons/help.png" alt="Help icon" class="nav-icon"/>
+            Help
+        </button>
+      </nav>
+      <!-- <div class="sidebar-bottom" tabindex="0" aria-label="Data table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th><th>Name</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Alice</td><td>Active</td></tr>
+            <tr><td>2</td><td>Bob</td><td>Inactive</td></tr>
+            <tr><td>3</td><td>Charlie</td><td>Pending</td></tr>
+            <tr><td>4</td><td>Diana</td><td>Active</td></tr>
+            <tr><td>5</td><td>Edward</td><td>Inactive</td></tr>
+          </tbody>
+        </table>
+      </div> -->
+    </aside>
+    <main class="content" tabindex="0">
+      <div class="main-top">
+        <h1 id="main-title">Bestellung</h1>
+        <button class="main-button" onClick="">Update</button>
+      </div>
+      <!-- order detail -->
+
+
+      <!-- navigation bar -->
+
+
+      
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+</body>
 </html>
