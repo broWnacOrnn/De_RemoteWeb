@@ -1,0 +1,20 @@
+{
+  "name": "de_remoteweb",
+  "version": "1.0.0",
+  "description": "This is a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/broWnacOrnn/De_RemoteWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/broWnacOrnn/De_RemoteWeb/issues"
+  },
+  "homepage": "https://github.com/broWnacOrnn/De_RemoteWeb#readme"
+}
