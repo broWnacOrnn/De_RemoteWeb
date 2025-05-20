@@ -27,7 +27,7 @@ body, html {
 .container {
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .sidebar {
@@ -67,6 +67,7 @@ body, html {
     padding: 12px 20px;
     font-size: 16px;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s;
@@ -121,6 +122,7 @@ tbody tr:hover {
     background: rgb(235, 234, 234);
     box-sizing: border-box;
     padding-left: 1%;
+    padding-right: 10px;
 }
 
 .content h1 {
@@ -130,7 +132,7 @@ tbody tr:hover {
 
 /* Dropdown styles */
 .dropdown {
-    position: relative; /* Position relative for dropdown content */
+    position: relative;
 }
 
 .dropdown .dropbtn {
@@ -143,6 +145,7 @@ tbody tr:hover {
     padding: 12px 20px;
     font-size: 16px;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s;
@@ -199,14 +202,13 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 20px;
+  margin: 10px;
 }
 
 .main-top h1 {
     font-weight: 600;
     color: black;
     font-size: 20px;
-    margin: 0;
     margin-right: 20px;
 }
 
@@ -226,3 +228,108 @@ tbody tr:hover {
     background-color: #0056d2; /* Darker blue shade on hover */
 }
 
+/*Order detail*/
+.order-detail-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    background:transparent;
+    /* padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); */
+    grid-auto-rows: min-content;
+    align-items: start;
+}
+
+.col {
+    display: grid;
+    gap: 12px;
+}
+
+.col-1, col-2 {
+    grid-template-rows: auto auto;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.text {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.col-3 {
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+}
+
+.col-3 .row-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.col-3 .row-item .label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.col-3 .row-item .text {
+    font-size: 1.1rem;
+    color: black;
+    text-align: right;
+    min-width: 80px;
+}
+
+/* Navigation bar */
+.navbar {
+    background: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    /* z-index: 10; */
+    /* flex-shrink: 0; */
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+.nav-item {
+    flex: 1 1 0;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1tem;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #ffffff;
+    color: #0252c2;
+    box-shadow: 0 4px 10px rgb(229, 228, 228);
+    cursor: pointer;
+}
+
+.nav-content-container {
+    background:white;
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 100%;
+}

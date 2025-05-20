@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
-<title>Left Sidebar Navigation Layout</title>
+<title></title>
 </head>
 <body>
   <header class="top-bar" role="banner">
@@ -114,11 +114,54 @@
         <button class="main-button" onClick="">Update</button>
       </div>
       <!-- order detail -->
-
+      <div class="order-detail-container">
+        <div class="col col-1">
+          <div class="label">Customer</div>
+          <div class="text" id="customer-name">Customer name</div>
+        </div>
+        <div class="col col-2">
+          <div class="label">Order code</div>
+          <div class="text" id="order-code">123456789</div>
+        </div>
+        <div class="col col-3">
+          <div class="row-item">
+            <div class="label">Row 1</div>
+            <div class="text" id="row1">Value 1</div>
+          </div>
+          <div class="row-item">
+            <div class="label">Row 2</div>
+            <div class="text" id="row2">Value 1</div>
+          </div>
+          <div class="row-item">
+            <div class="label">Row 3</div>
+            <div class="text" id="row13">Value 1</div>
+          </div>
+        </div>
+        <div class="col col-3">
+          <div class="row-item">
+            <div class="label">Code</div>
+            <div class="text" id="code">10000200</div>
+          </div>
+        </div>
+      </div>
 
       <!-- navigation bar -->
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link" data-content="test">Bestellung</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-content="2">Lieferanschrift & -art</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-content="3">Positionen</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-content="4">Lieferkosten</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-content="5">Auftragsbestatigung (WaWi)</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-content="6">Lieferschein (WaWi)</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-content="7">Rechnung (WaWi)</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-content="8">Verlaut</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-content="9">Verlaut/Versand (OpenZ)</a></li>
+        </ul>
+      </nav>
+      <div class="nav-content-container" id="nav-content">
 
-
+      </div>
       
     </main>
   </div>
